@@ -25,7 +25,7 @@ func resourceCassandraTable() *schema.Resource {
 				Type:         schema.TypeString,
 				Required:     true,
 				ForceNew:     true,
-				Description:  "Name of role - must contain between 1 and 256 characters",
+				Description:  "Name of table - must contain between 1 and 256 characters",
 				ValidateFunc: validation.StringLenBetween(1, 256),
 			},
 			"keyspace": {
